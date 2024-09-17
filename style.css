@@ -1,0 +1,106 @@
+/* Estilos gerais */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Adiciona a imagem de fundo e preenche as laterais com cinza claro */
+body {
+    background-color: #f0f0f0; /* Cor de fundo cinza claro */
+    background-image: url('assets/foto_3.png'); /* Imagem de fundo */
+    background-size: contain; /* Ajusta a imagem para caber na tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    image-rendering: auto; /* Mantém a renderização da imagem padrão sem interferência */
+}
+
+/* Container centralizado com o formulário */
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semi-transparente para maior visibilidade da imagem de fundo */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333; /* Cor escura para contraste com o fundo */
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555; /* Cor mais suave para o texto */
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333; /* Cor escura para visibilidade */
+}
+
+input, select, button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+}
+
+/* Estilo do Modal de Sucesso */
+.modal {
+    display: none; /* Modal começa oculto */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
